@@ -15,6 +15,13 @@
 #include <QtScript>
 #include <QtScript/QScriptValueIterator>
 
+#include <QMediaPlayer>
+#include <QtNetwork>
+#include <QRegExp>
+
+#include <QTimer>
+#include <QTime>
+
 namespace Ui {
 class MainWindow;
 }
@@ -30,7 +37,17 @@ public:
 private:
     Ui::MainWindow *ui;
 
-    //Q
+    QMediaPlayer *player;
+
+private:
+    QString getMac();
+    void showSong(QString bai_tex,QString bai_lan,QString bai_tok,
+                  QString bai_ctp,QString bai_cuid,QString bai_spd,
+                  QString bai_pit,QString bai_vol,QString bai_per);
+
+private slots:
+    void onBtnSend();
+    void replyFinished(QNetworkReply *reply);
 };
 
 #endif // MAINWINDOW_H
