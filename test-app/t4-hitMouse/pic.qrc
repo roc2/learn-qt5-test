@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/pic">
+        <file alias="emptyhole">resource/emptyhole.png</file>
+        <file alias="mouse_hited">resource/mouse_hited.png</file>
+        <file alias="mouse_show">resource/mouse_show.png</file>
+        <file alias="hammer_down">resource/hammer_down.png</file>
+        <file alias="hammer_up">resource/hammer_up.png</file>
+    </qresource>
+</RCC>
